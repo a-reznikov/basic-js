@@ -108,7 +108,8 @@ describe('Count cats!', () => {
         assert.equal(countCats(backyard), count);
       }
     });
-  });
+  }
+  );
 });
 
 

@@ -14,9 +14,26 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]) => 3`
  *
  */
-function countCats(/* matrix */) {
-  throw new NotImplementedError('Not implemented');
-  // remove line with error and write your code here
+
+// countCats([
+//   ['##', 'dd', '00'],
+//   ['^^', '..', 'ss'],
+//   ['AA', 'dd', 'Oo'],
+// ]);
+
+function countCats(matrix) {
+  let count = 0;
+  for (let subMatrix of matrix) {
+    for (let mayBeCats of subMatrix)
+    if (mayBeCats === '^^') {
+      //console.log('Found', mayBeCats);
+      count ++;
+    } else {
+      //console.log('Not found', mayBeCats);
+    }
+  }
+  //console.debug(count);
+  return count;
 }
 
 module.exports = {
