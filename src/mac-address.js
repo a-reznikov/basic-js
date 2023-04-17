@@ -43,7 +43,7 @@ function isMAC48Address(n) {
 }
 
 
-isMAC48Address('00-1B-63-84-45-E6'); /// true)
+// isMAC48Address('00-1B-63-84-45-E6'); /// true)
 // isMAC48Address('Z1-1B-63-84-45-E6'); ///false
 // isMAC48Address('not a MAC-48 address'); // false);
 
