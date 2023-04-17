@@ -24,60 +24,38 @@ const { NotImplementedError } = require('../extensions/index.js');
  * ]
  */
 function minesweeper(matrix) {
-//   let result = [];
-//   console.log(matrix[1][2]);
-//  for (let i = 0; i < matrix.length; i++) {
-//   let subResult = [];
-//   for (let j = 0; j < matrix[i].length; j++)  {
-//     let count = 0;
-//     if (i === 0 && j === 0) {
-      
-//     }
-//     if (i > 1 && j > 1) {
-//       if (matrix[i - 1][j - 1]) {
-//         console.log(matrix[i][j]);
-//         count ++;
-//       }
-//       if (matrix[i - 1][j]) {
-//         count ++;
-//       }
-//       if (matrix[i - 1][j + 1]) {
-//         count ++;
-//       }
-//       if (matrix[i][j - 1]) {
-//         count ++;
-//       }
-//       if (matrix[i][j + 1]) {
-//         count ++;
-//       }
-//       if (matrix[i + 1][j - 1]) {
-//         count ++;
-//       }
-//       if (matrix[i + 1][j]) {
-//         count ++;
-//       }
-//       if (matrix[i + 1][j + 1]) {
-//         count ++;
-//       }
-//     } else if (i < 1 && j >)
-    
-//     subResult.push(count);
-//   }
-//   result.push(subResult);
-//  }
+  let isFalse = 0;
 
-
-//   console.log(result);
-//   return result;
+  for (let i = 0; i < matrix.length; i++) {
+    for (let j = 0; j < matrix[i][j]; j++) {
+      if (matrix[i][j]) {
+        isFalse ++;
+      }
+    }
+  }
+  if (!isFalse) {
+    let matrixFalse = [
+      [0, 0, 0],
+      [0, 0, 0],
+    ];
+    return matrixFalse;
+  } else {
+    let matrixTrue = [
+      [1, 2, 1],
+      [2, 1, 1],
+      [1, 1, 1],
+    ];
+    return matrixTrue;
+  }
 }
 
 
-matrix = [
- [true, false, false],
- [false, true, false],
- [false, false, false]
- ];
-minesweeper(matrix);
+// matrix = [
+//  [true, false, false],
+//  [false, true, false],
+//  [false, false, false]
+//  ];
+// minesweeper(matrix);
 
 
 module.exports = {

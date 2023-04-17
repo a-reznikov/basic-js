@@ -26,11 +26,11 @@ function getDNSStats(domains) {
   let counterDomains = {};
 
   for (let parts of domains) {
-    console.log(parts);
+    //console.log(parts);
     let partSplit = parts.split('.');
     let revPartSplit = partSplit.reverse();
 
-    console.log(revPartSplit);
+    //console.log(revPartSplit);
     
     for (let i = 0; i < revPartSplit.length;) {
       let newPart = revPartSplit.slice(0, i + 1).join('.');
@@ -39,7 +39,7 @@ function getDNSStats(domains) {
       i++;
     }
   }
-  console.log(counterDomains);
+  //console.log(counterDomains);
   return counterDomains;
   
 }
