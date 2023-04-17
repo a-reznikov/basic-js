@@ -47,7 +47,7 @@ const chainMaker = {
   }
 };
 
-chainMaker.reverseChain().reverseChain().reverseChain().addLink(NaN).reverseChain().addLink(null).addLink(1.233).addLink(true).addLink(false).removeLink(3).addLink(1.233).finishChain(); 
+// chainMaker.reverseChain().reverseChain().reverseChain().addLink(NaN).reverseChain().addLink(null).addLink(1.233).addLink(true).addLink(false).removeLink(3).addLink(1.233).finishChain(); 
 //'( NaN )~~( null )~~( true )~~( false )~~( 1.233 )
 
 // chainMaker.addLink(1).addLink(2).addLink(3).removeLink('2nd');
